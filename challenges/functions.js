@@ -27,14 +27,11 @@ const multiply = function(num1,num2) {
 const greeting = function(name1,name2) {
   return "Hello " + name1 + " " + name2 + ", nice to meet you!"
 }
-// console.log(consume(3,5, add));
-// console.log(consume(3,5, multiply));
-// console.log(consume("Bob", "Smith", greeting));
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-consume(2,2,add); // 4
-consume(10,16,multiply); // 160
-consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+console.log(consume(2,2,add)); // 4
+console.log(consume(10,16,multiply)); // 160
+console.log(consume("Mary","Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 

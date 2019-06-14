@@ -168,9 +168,24 @@ const populationTotal = zooAnimals.reduce((population, animal) => {
   , 0);
 console.log(populationTotal);
 
-/* 
+//Stretch: If you haven't already, convert your array method callbacks into arrow functions.
+//COMPLETED!
 
-Stretch: If you haven't already, convert your array method callbacks into arrow functions.
+const arrowFuncAnimalNames = [];
+zooAnimals.forEach((arr) => {
+  arrowFuncAnimalNames.push(`Name: ${arr.animal_name}, Scientific: ${arr.scientific_name}`);
+  return arrowFuncAnimalNames;
+})
+console.log('arrow function: ', arrowFuncAnimalNames);
 
-*/
+const arrowFuncLowerCase = zooAnimals.map((arr) => {
+  return `${arr.animal_name}`.toLowerCase();
+})
+console.log(arrowFuncLowerCase);
 
+const arrowFunLowerPopulation = zooAnimals.filter((animal) => {
+  return animal.population < 5;
+})
+console.log(arrowFunLowerPopulation);
+
+//for Population total, see above (I did it w/ an arrow function the first time around)
