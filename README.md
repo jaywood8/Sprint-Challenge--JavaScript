@@ -1,3 +1,24 @@
+Jay Wood 6-14-19  ....
+
+Self-Study Questions: 
+Describe the biggest difference between .forEach & .map.
+---.forEach does NOT create a new array, but .map (and .filter and .reduce) do create a new array.
+
+What is the difference between a function and a method?
+---methods are functions that are tied to specific object prototypes, whereas functions can be more generally applied. So, jaysObject.speak() will only work for jaysObject, whereas function(x,y){return x+y} could work anywhere in my code (as long I've invoked it in the right place)
+
+What is closure?
+---Closure is just describing the scope of particular variables/functions within the larger code structure. Variables declared within a function are not accessible to other bits of code outside of that function (unless it's being returned at the end of the function). This is helpful for us if we want to keep a variable from being manipulated by outside code (a 'counter' function is the best ex of this; we don't want the counter to get reset every time the code executes, so we can 'hide' the counter variable within a function).
+
+Describe the four rules of the 'this' keyword.
+1. implicit binding: 'this' is tied to its context. This is the most common
+2. explicit binding: 'this' is explitly tied to a new context, via a .call(), e,g.. 
+3. new binding: creates a new object via a constructor function and ties 'this' to that new object.
+4. window binding: just try console.logging 'this' in the first lines of a blank file. 'This' refers to the 'window'  
+
+Why do we need super() in an extended class?
+---super() allows us to add new properties/attributes/key-value pairs to a child object. E.g., if our child has properties that the parent does not, super() allows us to add those, new child-specific properties. But we'll need the "extends" bit for super to work (and vice versa).
+
 # Sprint Challenge: JavaScript Fundamentals
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a survey of problems. This Sprint explored JavaScript Fundamentals. During this Sprint, you studied variables, functions, object literals, arrays, this keyword, prototypes, and class syntax. In your challenge this week, you will demonstrate proficiency by completing a survey of JavaScript problems.
